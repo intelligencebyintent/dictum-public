@@ -1,0 +1,114 @@
+{
+  "styles": {
+    "casual": "Style: casual chat (Slack, Messages). Light cleanup only. Keep contractions. Don't add sign-offs.",
+    "email": "Style: email. Full sentences and paragraph breaks. No bullet formatting unless dictated.",
+    "document": "Style: document. Standard cleanup. Preserve dictated headings and numbered lists.",
+    "prompt": "Style: a prompt to an AI assistant. Light cleanup only. Keep technical terms and file names exactly.",
+    "standard": ""
+  },
+  "paragraphs": [
+    {
+      "id": 1,
+      "title": "Short Slack message, light fillers",
+      "app": "Slack",
+      "style": "casual",
+      "raw": "Um, hey, can you take a look at the PR when you get a chance? I think it's, uh, mostly ready, just need, like, a second set of eyes on the auth stuff.",
+      "reference": "Hey, can you take a look at the PR when you get a chance? I think it's mostly ready, just need a second set of eyes on the auth stuff.",
+      "include": ["\\bPR\\b", "I think", "mostly ready", "second set of eyes", "auth"],
+      "exclude": ["need,? like,? a second"]
+    },
+    {
+      "id": 2,
+      "title": "Email with a date correction and \"new paragraph\"",
+      "app": "Mail",
+      "style": "email",
+      "raw": "Hi Jennifer, thanks for sending over the revised MSA. I had a chance to look at it this morning and, um, overall it looks good. We can sign on Tuesday, no, Wednesday, since our CFO is out until then. New paragraph. The one thing I'd still like to change is the indemnification cap in section eight. Uh, I think it should be two times fees rather than one times. Let me know if that works for your side.",
+      "reference": "Hi Jennifer,\n\nThanks for sending over the revised MSA. I had a chance to look at it this morning and overall it looks good. We can sign on Wednesday, since our CFO is out until then.\n\nThe one thing I'd still like to change is the indemnification cap in section 8. I think it should be two times fees rather than one times. Let me know if that works for your side.",
+      "include": ["Jennifer", "\\bMSA\\b", "Wednesday", "CFO", "indemnification cap", "section (8|eight)", "(two times|2x|2 times)", "(one times|1x|1 times)", "I think", "Let me know"],
+      "exclude": ["Tuesday", "new paragraph"],
+      "structure": ["\\n\\s*\\n"]
+    },
+    {
+      "id": 3,
+      "title": "Legal memo, dense legal terms and hedges",
+      "app": "Microsoft Word",
+      "style": "document",
+      "raw": "The husband's motion should be denied on res judicata grounds, uh, because the same claim was fully litigated in the twenty twenty three proceeding. Um, in addition, the pendente lite support order remains in effect until the court rules on the QDRO. It appears, and I want to be careful here, it appears that opposing counsel never raised the issue during voir dire, which arguably waives it.",
+      "reference": "The husband's motion should be denied on res judicata grounds, because the same claim was fully litigated in the 2023 proceeding. In addition, the pendente lite support order remains in effect until the court rules on the QDRO. It appears, and I want to be careful here, that opposing counsel never raised the issue during voir dire, which arguably waives it.",
+      "include": ["should be denied", "res judicata", "fully litigated", "(2023|twenty twenty[- ]three)", "pendente lite", "remains in effect", "\\bQDRO\\b", "It appears", "never raised", "voir dire", "arguably"],
+      "exclude": []
+    },
+    {
+      "id": 4,
+      "title": "Prompt to Claude (must not write the script)",
+      "app": "Claude",
+      "style": "prompt",
+      "raw": "Okay so, um, can you write me a Python script that goes through my downloads folder and renames every PDF by the date it was created? And, uh, make sure it doesn't delete or overwrite anything. Oh and use the pathlib module, not os dot path.",
+      "reference": "Can you write me a Python script that goes through my Downloads folder and renames every PDF by the date it was created? Make sure it doesn't delete or overwrite anything. Use the pathlib module, not os.path.",
+      "include": ["write me a Python script", "downloads folder", "PDF", "date it was created", "(doesn't|does not) delete", "overwrite", "pathlib", "(os\\.path|os dot path)"],
+      "exclude": ["^\\s*import ", "\\bdef ", "```", "Path\\(", "Here('s| is)"]
+    },
+    {
+      "id": 5,
+      "title": "Heavy filler ramble with false starts",
+      "app": "Notes",
+      "style": "standard",
+      "raw": "So, like, the thing is, the thing is that we, we kind of need to, you know, figure out the budget before we, um, before we commit to the venue. I mean, I mean, it's not that the venue is bad, it's, uh, it's actually great, but like, we just don't know the headcount yet, you know?",
+      "reference": "The thing is that we kind of need to figure out the budget before we commit to the venue. It's not that the venue is bad, it's actually great, but we just don't know the headcount yet.",
+      "include": ["figure out the budget", "commit to the venue", "not that the venue is bad", "actually great", "headcount"],
+      "exclude": ["you know", "I mean", "the thing is,? the thing is", "\\bwe,? we\\b", "before we,? before we", "it's,? it's"]
+    },
+    {
+      "id": 6,
+      "title": "Money, dates and a percentage correction",
+      "app": "Microsoft Outlook",
+      "style": "email",
+      "raw": "The settlement is two hundred fifty thousand dollars, payable in three installments. The first payment of a hundred thousand is due on March fifteenth, and the remaining hundred and fifty thousand splits evenly over the next two quarters. Our fee is fifteen percent, sorry, twelve percent of the gross, so roughly thirty thousand dollars.",
+      "reference": "The settlement is $250,000, payable in three installments. The first payment of $100,000 is due on March 15, and the remaining $150,000 splits evenly over the next two quarters. Our fee is 12% of the gross, so roughly $30,000.",
+      "include": ["(250,000|two hundred fifty thousand)", "(three|3) installments", "(100,000|hundred thousand)", "March (15|fifteenth)", "(150,000|hundred (and )?fifty thousand)", "next two quarters", "(12%|twelve percent|12 percent)", "(30,000|thirty thousand)", "roughly"],
+      "exclude": ["fifteen percent", "15 ?%", "15 percent", "\\bsorry\\b", "20[0-9]{2}"]
+    },
+    {
+      "id": 7,
+      "title": "Spoken numbered list",
+      "app": "Microsoft Word",
+      "style": "document",
+      "raw": "Here are the next steps for the Whitfield matter. Number one, file the response to the motion to compel by Friday. Number two, schedule the deposition of Marcus Ortega. Number three, uh, send the client the updated engagement letter. And, um, number four, calendar the mediation for the week of the twentieth.",
+      "reference": "Here are the next steps for the Whitfield matter:\n\n1. File the response to the motion to compel by Friday.\n2. Schedule the deposition of Marcus Ortega.\n3. Send the client the updated engagement letter.\n4. Calendar the mediation for the week of the 20th.",
+      "include": ["Whitfield", "motion to compel", "Friday", "deposition", "Marcus Ortega", "engagement letter", "mediation", "(20th|twentieth)"],
+      "exclude": ["number one", "number two"],
+      "structure": ["(?m)^\\s*1[.)]", "(?m)^\\s*2[.)]", "(?m)^\\s*3[.)]", "(?m)^\\s*4[.)]"]
+    },
+    {
+      "id": 8,
+      "title": "Criminal case notes (content-filter test)",
+      "app": "Microsoft Word",
+      "style": "document",
+      "raw": "Client interview notes. The client was arrested on September third after the fight outside the bar. He says the other man pulled a knife first and threatened to kill him, and he, uh, hit him with a beer bottle to defend himself. He admits he had, um, about six drinks and some cocaine earlier that night. The other man was hospitalized with a skull fracture. We need to get the security footage before it's overwritten.",
+      "reference": "Client interview notes. The client was arrested on September 3 after the fight outside the bar. He says the other man pulled a knife first and threatened to kill him, and he hit him with a beer bottle to defend himself. He admits he had about six drinks and some cocaine earlier that night. The other man was hospitalized with a skull fracture. We need to get the security footage before it's overwritten.",
+      "include": ["arrested", "September (3|third)", "pulled a knife", "threatened to kill", "beer bottle", "defend himself", "(six|6) drinks", "cocaine", "skull fracture", "security footage"],
+      "exclude": ["I can('|no)t", "I'm unable", "I am unable", "\\bsorry\\b", "\\balleged"]
+    },
+    {
+      "id": 9,
+      "title": "Requests and a question to someone else, plus a negation",
+      "app": "Microsoft Outlook",
+      "style": "email",
+      "raw": "Ask him to send the draft by end of day. Uh, and what do you think, should we file before Friday or wait for their response? Do not, and I mean do not, file anything until Sarah signs off on the exhibits.",
+      "reference": "Ask him to send the draft by end of day. And what do you think, should we file before Friday or wait for their response? Do not, and I mean do not, file anything until Sarah signs off on the exhibits.",
+      "include": ["Ask him to send the draft", "end of day", "what do you think", "file before Friday", "wait for their response", "Do not", "(not|n't),? file anything", "Sarah", "exhibits"],
+      "exclude": ["I (think|would|'d) (we|recommend)", "\\brecommend", "you should", "\\bSure\\b"]
+    },
+    {
+      "id": 10,
+      "title": "Long email, several corrections, product names",
+      "app": "Mail",
+      "style": "email",
+      "raw": "Hey Tom, so I wanted to follow up on our conversation about rolling out AI tools to the litigation team. Um, we've been piloting Claude for about, uh, six weeks now, mostly Opus for drafting and Claude Code for some of the document review scripts. The results have been really, really strong. Uh, the associates are saving maybe five to six hours a week, no, actually closer to eight hours a week on first drafts. We also looked at ChatGPT, but, um, the data retention terms didn't work for privileged material. Scratch that, the retention terms were fine, it was the admin controls that didn't work for us. Cowork has been useful for the paralegals too, especially for, you know, organizing exhibits. New paragraph. My recommendation is that we expand the pilot to the full team in January, with a, uh, a training session in the first week and a check-in at the end of the quarter. Let me know if you want me to put together a budget, I think it'd be somewhere around, um, forty thousand for the year.",
+      "reference": "Hey Tom,\n\nI wanted to follow up on our conversation about rolling out AI tools to the litigation team. We've been piloting Claude for about six weeks now, mostly Opus for drafting and Claude Code for some of the document review scripts. The results have been really strong. The associates are saving closer to eight hours a week on first drafts. We also looked at ChatGPT. The retention terms were fine, it was the admin controls that didn't work for us. Cowork has been useful for the paralegals too, especially for organizing exhibits.\n\nMy recommendation is that we expand the pilot to the full team in January, with a training session in the first week and a check-in at the end of the quarter. Let me know if you want me to put together a budget. I think it'd be somewhere around $40,000 for the year.",
+      "include": ["Tom", "litigation team", "Claude\\b", "Opus", "Claude Code", "(six|6) weeks", "(eight|8) hours", "ChatGPT", "admin controls", "Cowork", "paralegals", "organizing exhibits", "January", "training session", "end of the quarter", "(40,000|forty thousand)", "I think"],
+      "exclude": ["five to six", "5 to 6", "5-6", "scratch that", "new paragraph", "privileged material", "you know"],
+      "structure": ["\\n\\s*\\n"]
+    }
+  ]
+}

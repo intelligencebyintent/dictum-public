@@ -1,0 +1,37 @@
+# macOS
+.DS_Store
+
+# XcodeGen output (generated from project.yml — never committed)
+*.xcodeproj
+*.xcworkspace
+
+# Build artifacts
+.build/
+DerivedData/
+build/
+*.dmg
+*.zip
+
+# Xcode user state
+xcuserdata/
+*.xcuserstate
+
+# SwiftPM
+.swiftpm/
+Package.resolved
+
+# Secrets / local config
+*.env
+secrets.*
+ExportOptions.local.plist
+
+# Dictum: personal eval recordings and transcripts may contain sensitive
+# content. Never commit them, or any audio.
+eval/
+*.wav
+*.aiff
+*.m4a
+*.caf
+
+# Claude Code per-machine settings
+.claude/settings.local.json

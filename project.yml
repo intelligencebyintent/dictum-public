@@ -1,0 +1,71 @@
+name: Dictum
+
+# Source folders and the MurmurKit module keep their upstream names so diffs
+# against robzilla1738/Murmur stay readable; the product is Dictum.
+options:
+  bundleIdPrefix: com.intelligencebyintent
+  deploymentTarget:
+    macOS: "26.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MACOSX_DEPLOYMENT_TARGET: "26.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    DEAD_CODE_STRIPPING: YES
+    MARKETING_VERSION: "0.3.2"
+    CURRENT_PROJECT_VERSION: "6"
+    PRODUCT_BUNDLE_IDENTIFIER: com.intelligencebyintent.dictum
+  configs:
+    Debug:
+      ENABLE_HARDENED_RUNTIME: NO
+      CODE_SIGN_IDENTITY: "-"
+      CODE_SIGN_STYLE: Manual
+      DEVELOPMENT_TEAM: ""
+    Release:
+      ENABLE_HARDENED_RUNTIME: YES
+      CODE_SIGN_IDENTITY: "-"
+      CODE_SIGN_STYLE: Manual
+      DEVELOPMENT_TEAM: ""
+
+packages:
+  MurmurKit:
+    path: MurmurKit
+  KeyboardShortcuts:
+    url: https://github.com/sindresorhus/KeyboardShortcuts
+    from: "2.2.0"
+
+targets:
+  Dictum:
+    type: application
+    platform: macOS
+    sources:
+      - path: Murmur
+        excludes:
+          - "Resources/Info.plist"
+          - "Resources/Murmur.entitlements"
+    dependencies:
+      - package: MurmurKit
+        product: MurmurKit
+      - package: KeyboardShortcuts
+    settings:
+      base:
+        PRODUCT_NAME: Dictum
+        PRODUCT_BUNDLE_IDENTIFIER: com.intelligencebyintent.dictum
+        INFOPLIST_FILE: Murmur/Resources/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Murmur/Resources/Murmur.entitlements
+        GENERATE_INFOPLIST_FILE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ENABLE_PREVIEWS: YES
+        COMBINE_HIDPI_IMAGES: YES
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks"
+        # Self-signed, this-Mac-only identity (see README, Build). A stable
+        # signature keeps the Accessibility / Input Monitoring grants across
+        # rebuilds; ad-hoc signing loses them every build. Set on the app
+        # target only, so the SwiftPM resource bundles stay ad-hoc. No Developer
+        # ID yet, so there is no notarized Release build.
+        CODE_SIGN_IDENTITY: "Dictum Local Code Signing"

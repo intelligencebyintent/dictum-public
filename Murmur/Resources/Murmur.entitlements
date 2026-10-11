@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!--
+      Murmur is intentionally NOT sandboxed (no com.apple.security.app-sandbox key).
+      System-wide keystroke synthesis (Cmd+V) and a global CGEventTap are forbidden
+      under App Sandbox, so Murmur ships via Developer ID + notarization, never the MAS.
+      Accessibility / Input Monitoring are runtime TCC grants — no entitlement needed.
+    -->
+    <key>com.apple.security.cs.disable-library-validation</key>
+    <true/>
+    <key>com.apple.security.device.audio-input</key>
+    <true/>
+</dict>
+</plist>

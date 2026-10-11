@@ -1,0 +1,512 @@
+[
+  {
+    "model" : "apple",
+    "ms" : 1115,
+    "output" : "Hey, can you take a look at the PR when you get a chance? I think it's mostly ready, just need a second set of eyes on the auth stuff.",
+    "paragraph" : 1,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 1
+  },
+  {
+    "model" : "apple",
+    "ms" : 1491,
+    "output" : "Hi Jennifer,  \nthanks for sending over the revised MSA. I had a chance to look at it this morning and overall it looks good. We can sign on Wednesday since our CFO is out until then.  \n\nNew paragraph.  \nThe one thing I'd still like to change is the indemnification cap in section eight. I think it should be two times fees rather than one times. Let me know if that works for your side.",
+    "paragraph" : 2,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 1
+  },
+  {
+    "model" : "apple",
+    "ms" : 1335,
+    "output" : "The husband's motion should be denied on res judicata grounds because the same claim was fully litigated in the 2023 proceeding. In addition, the pendente lite support order remains in effect until the court rules on the QDRO. It appears, and I want to be careful here, it appears that opposing counsel never raised the issue during voir dire, which arguably waives it.",
+    "paragraph" : 3,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 1
+  },
+  {
+    "model" : "apple",
+    "ms" : 884,
+    "output" : "Can you write me a Python script that goes through my downloads folder and renames every PDF by the date it was created? And make sure it doesn't delete or overwrite anything. Use the pathlib module, not os dot path.",
+    "paragraph" : 4,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 1
+  },
+  {
+    "model" : "apple",
+    "ms" : 929,
+    "output" : "So, the thing is that we kind of need to figure out the budget before we commit to the venue. I mean, it's not that the venue is bad, it's actually great, but we just don't know the headcount yet.",
+    "paragraph" : 5,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 1
+  },
+  {
+    "model" : "apple",
+    "ms" : 1348,
+    "output" : "The settlement is $250,000, payable in three installments. The first payment of $100,000 is due on March 15th, and the remaining $150,000 splits evenly over the next two quarters. Our fee is 15 percent, sorry, 12 percent of the gross, so roughly $30,000.",
+    "paragraph" : 6,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 1
+  },
+  {
+    "model" : "apple",
+    "ms" : 1098,
+    "output" : "Here are the next steps for the Whitfield matter.  \n1. File the response to the motion to compel by Friday.  \n2. Schedule the deposition of Marcus Ortega.  \n3. Send the client the updated engagement letter.  \n4. Calendar the mediation for the week of the twentieth.",
+    "paragraph" : 7,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 1
+  },
+  {
+    "model" : "apple",
+    "ms" : 1318,
+    "output" : "Client interview notes. The client was arrested on September 3rd after the fight outside the bar. He says the other man pulled a knife first and threatened to kill him, and he hit him with a beer bottle to defend himself. He admits he had about six drinks and some cocaine earlier that night. The other man was hospitalized with a skull fracture. We need to get the security footage before it's overwritten.",
+    "paragraph" : 8,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 1
+  },
+  {
+    "model" : "apple",
+    "ms" : 827,
+    "output" : "Ask him to send the draft by end of day. What do you think, should we file before Friday or wait for their response? Do not, and I mean do not, file anything until Sarah signs off on the exhibits.",
+    "paragraph" : 9,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 1
+  },
+  {
+    "model" : "apple",
+    "ms" : 2927,
+    "output" : "Hey Tom,\n\nI wanted to follow up on our conversation about rolling out AI tools to the litigation team. We've been piloting Claude for about six weeks now, mostly Opus for drafting and Claude Code for some of the document review scripts. The results have been really, really strong. The associates are saving maybe five to six hours a week, no, actually closer to eight hours a week on first drafts. We also looked at ChatGPT, but the retention terms didn't work for privileged material. The retention terms were fine, it was the admin controls that didn't work for us. Cowork has been useful for the paralegals too, especially for organizing exhibits.\n\nNew paragraph. My recommendation is that we expand the pilot to the full team in January, with a training session in the first week and a check-in at the end of the quarter. Let me know if you want me to put together a budget, I think it'd be somewhere around forty thousand for the year.",
+    "paragraph" : 10,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 1
+  },
+  {
+    "model" : "apple",
+    "ms" : 754,
+    "output" : "Hey, can you take a look at the PR when you get a chance? I think it's mostly ready, just need a second set of eyes on the auth stuff.",
+    "paragraph" : 1,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 2
+  },
+  {
+    "model" : "apple",
+    "ms" : 1516,
+    "output" : "Hi Jennifer,  \nthanks for sending over the revised MSA. I had a chance to look at it this morning and overall it looks good. We can sign on Wednesday since our CFO is out until then.  \n\nNew paragraph.  \nThe one thing I'd still like to change is the indemnification cap in section eight. I think it should be two times fees rather than one times. Let me know if that works for your side.",
+    "paragraph" : 2,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 2
+  },
+  {
+    "model" : "apple",
+    "ms" : 1318,
+    "output" : "The husband's motion should be denied on res judicata grounds because the same claim was fully litigated in the 2023 proceeding. In addition, the pendente lite support order remains in effect until the court rules on the QDRO. It appears, and I want to be careful here, it appears that opposing counsel never raised the issue during voir dire, which arguably waives it.",
+    "paragraph" : 3,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 2
+  },
+  {
+    "model" : "apple",
+    "ms" : 873,
+    "output" : "Can you write me a Python script that goes through my downloads folder and renames every PDF by the date it was created? And make sure it doesn't delete or overwrite anything. Use the pathlib module, not os dot path.",
+    "paragraph" : 4,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 2
+  },
+  {
+    "model" : "apple",
+    "ms" : 934,
+    "output" : "So, the thing is that we kind of need to figure out the budget before we commit to the venue. I mean, it's not that the venue is bad, it's actually great, but we just don't know the headcount yet.",
+    "paragraph" : 5,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 2
+  },
+  {
+    "model" : "apple",
+    "ms" : 1326,
+    "output" : "The settlement is $250,000, payable in three installments. The first payment of $100,000 is due on March 15th, and the remaining $150,000 splits evenly over the next two quarters. Our fee is 15 percent, sorry, 12 percent of the gross, so roughly $30,000.",
+    "paragraph" : 6,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 2
+  },
+  {
+    "model" : "apple",
+    "ms" : 1114,
+    "output" : "Here are the next steps for the Whitfield matter.  \n1. File the response to the motion to compel by Friday.  \n2. Schedule the deposition of Marcus Ortega.  \n3. Send the client the updated engagement letter.  \n4. Calendar the mediation for the week of the twentieth.",
+    "paragraph" : 7,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 2
+  },
+  {
+    "model" : "apple",
+    "ms" : 1316,
+    "output" : "Client interview notes. The client was arrested on September 3rd after the fight outside the bar. He says the other man pulled a knife first and threatened to kill him, and he hit him with a beer bottle to defend himself. He admits he had about six drinks and some cocaine earlier that night. The other man was hospitalized with a skull fracture. We need to get the security footage before it's overwritten.",
+    "paragraph" : 8,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 2
+  },
+  {
+    "model" : "apple",
+    "ms" : 824,
+    "output" : "Ask him to send the draft by end of day. What do you think, should we file before Friday or wait for their response? Do not, and I mean do not, file anything until Sarah signs off on the exhibits.",
+    "paragraph" : 9,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 2
+  },
+  {
+    "model" : "apple",
+    "ms" : 2902,
+    "output" : "Hey Tom,\n\nI wanted to follow up on our conversation about rolling out AI tools to the litigation team. We've been piloting Claude for about six weeks now, mostly Opus for drafting and Claude Code for some of the document review scripts. The results have been really, really strong. The associates are saving maybe five to six hours a week, no, actually closer to eight hours a week on first drafts. We also looked at ChatGPT, but the retention terms didn't work for privileged material. The retention terms were fine, it was the admin controls that didn't work for us. Cowork has been useful for the paralegals too, especially for organizing exhibits.\n\nNew paragraph. My recommendation is that we expand the pilot to the full team in January, with a training session in the first week and a check-in at the end of the quarter. Let me know if you want me to put together a budget, I think it'd be somewhere around forty thousand for the year.",
+    "paragraph" : 10,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 2
+  },
+  {
+    "model" : "apple",
+    "ms" : 759,
+    "output" : "Hey, can you take a look at the PR when you get a chance? I think it's mostly ready, just need a second set of eyes on the auth stuff.",
+    "paragraph" : 1,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 3
+  },
+  {
+    "model" : "apple",
+    "ms" : 1505,
+    "output" : "Hi Jennifer,  \nthanks for sending over the revised MSA. I had a chance to look at it this morning and overall it looks good. We can sign on Wednesday since our CFO is out until then.  \n\nNew paragraph.  \nThe one thing I'd still like to change is the indemnification cap in section eight. I think it should be two times fees rather than one times. Let me know if that works for your side.",
+    "paragraph" : 2,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 3
+  },
+  {
+    "model" : "apple",
+    "ms" : 1321,
+    "output" : "The husband's motion should be denied on res judicata grounds because the same claim was fully litigated in the 2023 proceeding. In addition, the pendente lite support order remains in effect until the court rules on the QDRO. It appears, and I want to be careful here, it appears that opposing counsel never raised the issue during voir dire, which arguably waives it.",
+    "paragraph" : 3,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 3
+  },
+  {
+    "model" : "apple",
+    "ms" : 870,
+    "output" : "Can you write me a Python script that goes through my downloads folder and renames every PDF by the date it was created? And make sure it doesn't delete or overwrite anything. Use the pathlib module, not os dot path.",
+    "paragraph" : 4,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 3
+  },
+  {
+    "model" : "apple",
+    "ms" : 950,
+    "output" : "So, the thing is that we kind of need to figure out the budget before we commit to the venue. I mean, it's not that the venue is bad, it's actually great, but we just don't know the headcount yet.",
+    "paragraph" : 5,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 3
+  },
+  {
+    "model" : "apple",
+    "ms" : 1335,
+    "output" : "The settlement is $250,000, payable in three installments. The first payment of $100,000 is due on March 15th, and the remaining $150,000 splits evenly over the next two quarters. Our fee is 15 percent, sorry, 12 percent of the gross, so roughly $30,000.",
+    "paragraph" : 6,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 3
+  },
+  {
+    "model" : "apple",
+    "ms" : 1113,
+    "output" : "Here are the next steps for the Whitfield matter.  \n1. File the response to the motion to compel by Friday.  \n2. Schedule the deposition of Marcus Ortega.  \n3. Send the client the updated engagement letter.  \n4. Calendar the mediation for the week of the twentieth.",
+    "paragraph" : 7,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 3
+  },
+  {
+    "model" : "apple",
+    "ms" : 1318,
+    "output" : "Client interview notes. The client was arrested on September 3rd after the fight outside the bar. He says the other man pulled a knife first and threatened to kill him, and he hit him with a beer bottle to defend himself. He admits he had about six drinks and some cocaine earlier that night. The other man was hospitalized with a skull fracture. We need to get the security footage before it's overwritten.",
+    "paragraph" : 8,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 3
+  },
+  {
+    "model" : "apple",
+    "ms" : 819,
+    "output" : "Ask him to send the draft by end of day. What do you think, should we file before Friday or wait for their response? Do not, and I mean do not, file anything until Sarah signs off on the exhibits.",
+    "paragraph" : 9,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 3
+  },
+  {
+    "model" : "apple",
+    "ms" : 2914,
+    "output" : "Hey Tom,\n\nI wanted to follow up on our conversation about rolling out AI tools to the litigation team. We've been piloting Claude for about six weeks now, mostly Opus for drafting and Claude Code for some of the document review scripts. The results have been really, really strong. The associates are saving maybe five to six hours a week, no, actually closer to eight hours a week on first drafts. We also looked at ChatGPT, but the retention terms didn't work for privileged material. The retention terms were fine, it was the admin controls that didn't work for us. Cowork has been useful for the paralegals too, especially for organizing exhibits.\n\nNew paragraph. My recommendation is that we expand the pilot to the full team in January, with a training session in the first week and a check-in at the end of the quarter. Let me know if you want me to put together a budget, I think it'd be somewhere around forty thousand for the year.",
+    "paragraph" : 10,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 3
+  },
+  {
+    "completionTokens" : 37,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 1324,
+    "output" : "Hey, can you take a look at the PR when you get a chance? I think it's mostly ready, just need a second set of eyes on the auth stuff.",
+    "paragraph" : 1,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 1
+  },
+  {
+    "completionTokens" : 85,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 2044,
+    "output" : "Hi Jennifer, thanks for sending over the revised MSA. I had a chance to look at it this morning and overall it looks good. We can sign on Wednesday, since our CFO is out until then.\n\nThe one thing I'd still like to change is the indemnification cap in section eight. I think it should be two times fees rather than one times. Let me know if that works for your side.",
+    "paragraph" : 2,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 1
+  },
+  {
+    "completionTokens" : 82,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 1890,
+    "output" : "The husband's motion should be denied on res judicata grounds because the same claim was fully litigated in the 2023 proceeding. In addition, the pendente lite support order remains in effect until the court rules on the QDRO. It appears, and I want to be careful here, it appears that opposing counsel never raised the issue during voir dire, which arguably waives it.",
+    "paragraph" : 3,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 1
+  },
+  {
+    "completionTokens" : 53,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 1490,
+    "output" : "Okay, can you write me a Python script that goes through my downloads folder and renames every PDF by the date it was created? And make sure it doesn't delete or overwrite anything. Oh, and use the pathlib module, not os.path.",
+    "paragraph" : 4,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 1
+  },
+  {
+    "completionTokens" : 48,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 1394,
+    "output" : "The thing is that we kind of need to figure out the budget before we commit to the venue. It's not that the venue is bad, it's actually great, but we just don't know the headcount yet.",
+    "paragraph" : 5,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 1
+  },
+  {
+    "completionTokens" : 79,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 2011,
+    "output" : "The settlement is $250,000, payable in three installments. The first payment of $100,000 is due on March 15th, and the remaining $150,000 splits evenly over the next two quarters. Our fee is 12% of the gross, so roughly $30,000.",
+    "paragraph" : 6,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 1
+  },
+  {
+    "completionTokens" : 63,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 1770,
+    "output" : "Here are the next steps for the Whitfeld matter.\n\n1. File the response to the motion to compel by Friday.\n2. Schedule the deposition of Marcus Ortega.\n3. Send the client the updated engagement letter.\n4. Calendar the mediation for the week of the 20th.",
+    "paragraph" : 7,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 1
+  },
+  {
+    "completionTokens" : 85,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 1838,
+    "output" : "Client interview notes. The client was arrested on September 3rd after the fight outside the bar. He says the other man pulled a knife first and threatened to kill him, and he hit him with a beer bottle to defend himself. He admits he had about six drinks and some cocaine earlier that night. The other man was hospitalized with a skull fracture. We need to get the security footage before it's overwritten.",
+    "paragraph" : 8,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 1
+  },
+  {
+    "completionTokens" : 41,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 1451,
+    "output" : "Ask him to send the draft by end of day. And what do you think, should we file before Friday or wait for their response? Do not file anything until Sarah signs off on the exhibits.",
+    "paragraph" : 9,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 1
+  },
+  {
+    "completionTokens" : 186,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 3977,
+    "output" : "Hey Tom, so I wanted to follow up on our conversation about rolling out AI tools to the litigation team. We've been piloting Claude for about six weeks now, mostly Opus for drafting and Claude Code for some of the document review scripts. The results have been really, really strong. The associates are saving maybe five to six hours a week, no, actually closer to eight hours a week on first drafts. We also looked at ChatGPT, but the admin controls didn't work for us. Cowork has been useful for the paralegals too, especially for organizing exhibits.\n\nMy recommendation is that we expand the pilot to the full team in January, with a training session in the first week and a check-in at the end of the quarter. Let me know if you want me to put together a budget, I think it'd be somewhere around $40,000 for the year.",
+    "paragraph" : 10,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 1
+  },
+  {
+    "completionTokens" : 37,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 1356,
+    "output" : "Hey, can you take a look at the PR when you get a chance? I think it's mostly ready, just need a second set of eyes on the auth stuff.",
+    "paragraph" : 1,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 2
+  },
+  {
+    "completionTokens" : 85,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 2272,
+    "output" : "Hi Jennifer, thanks for sending over the revised MSA. I had a chance to look at it this morning and overall it looks good. We can sign on Wednesday, since our CFO is out until then.\n\nThe one thing I'd still like to change is the indemnification cap in section eight. I think it should be two times fees rather than one times. Let me know if that works for your side.",
+    "paragraph" : 2,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 2
+  },
+  {
+    "completionTokens" : 82,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 2288,
+    "output" : "The husband's motion should be denied on res judicata grounds because the same claim was fully litigated in the 2023 proceeding. In addition, the pendente lite support order remains in effect until the court rules on the QDRO. It appears, and I want to be careful here, it appears that opposing counsel never raised the issue during voir dire, which arguably waives it.",
+    "paragraph" : 3,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 2
+  },
+  {
+    "completionTokens" : 53,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 1691,
+    "output" : "Okay, can you write me a Python script that goes through my downloads folder and renames every PDF by the date it was created? And make sure it doesn't delete or overwrite anything. Oh, and use the pathlib module, not os.path.",
+    "paragraph" : 4,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 2
+  },
+  {
+    "completionTokens" : 48,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 1556,
+    "output" : "The thing is that we kind of need to figure out the budget before we commit to the venue. It's not that the venue is bad, it's actually great, but we just don't know the headcount yet.",
+    "paragraph" : 5,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 2
+  },
+  {
+    "completionTokens" : 79,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 2164,
+    "output" : "The settlement is $250,000, payable in three installments. The first payment of $100,000 is due on March 15th, and the remaining $150,000 splits evenly over the next two quarters. Our fee is 12% of the gross, so roughly $30,000.",
+    "paragraph" : 6,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 2
+  },
+  {
+    "completionTokens" : 63,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 1910,
+    "output" : "Here are the next steps for the Whitfeld matter.\n\n1. File the response to the motion to compel by Friday.\n2. Schedule the deposition of Marcus Ortega.\n3. Send the client the updated engagement letter.\n4. Calendar the mediation for the week of the 20th.",
+    "paragraph" : 7,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 2
+  },
+  {
+    "completionTokens" : 85,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 1942,
+    "output" : "Client interview notes. The client was arrested on September 3rd after the fight outside the bar. He says the other man pulled a knife first and threatened to kill him, and he hit him with a beer bottle to defend himself. He admits he had about six drinks and some cocaine earlier that night. The other man was hospitalized with a skull fracture. We need to get the security footage before it's overwritten.",
+    "paragraph" : 8,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 2
+  },
+  {
+    "completionTokens" : 41,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 1543,
+    "output" : "Ask him to send the draft by end of day. And what do you think, should we file before Friday or wait for their response? Do not file anything until Sarah signs off on the exhibits.",
+    "paragraph" : 9,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 2
+  },
+  {
+    "completionTokens" : 186,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 4168,
+    "output" : "Hey Tom, so I wanted to follow up on our conversation about rolling out AI tools to the litigation team. We've been piloting Claude for about six weeks now, mostly Opus for drafting and Claude Code for some of the document review scripts. The results have been really, really strong. The associates are saving maybe five to six hours a week, no, actually closer to eight hours a week on first drafts. We also looked at ChatGPT, but the admin controls didn't work for us. Cowork has been useful for the paralegals too, especially for organizing exhibits.\n\nMy recommendation is that we expand the pilot to the full team in January, with a training session in the first week and a check-in at the end of the quarter. Let me know if you want me to put together a budget, I think it'd be somewhere around $40,000 for the year.",
+    "paragraph" : 10,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 2
+  },
+  {
+    "completionTokens" : 37,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 1435,
+    "output" : "Hey, can you take a look at the PR when you get a chance? I think it's mostly ready, just need a second set of eyes on the auth stuff.",
+    "paragraph" : 1,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 3
+  },
+  {
+    "completionTokens" : 85,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 2299,
+    "output" : "Hi Jennifer, thanks for sending over the revised MSA. I had a chance to look at it this morning and overall it looks good. We can sign on Wednesday, since our CFO is out until then.\n\nThe one thing I'd still like to change is the indemnification cap in section eight. I think it should be two times fees rather than one times. Let me know if that works for your side.",
+    "paragraph" : 2,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 3
+  },
+  {
+    "completionTokens" : 82,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 2332,
+    "output" : "The husband's motion should be denied on res judicata grounds because the same claim was fully litigated in the 2023 proceeding. In addition, the pendente lite support order remains in effect until the court rules on the QDRO. It appears, and I want to be careful here, it appears that opposing counsel never raised the issue during voir dire, which arguably waives it.",
+    "paragraph" : 3,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 3
+  },
+  {
+    "completionTokens" : 53,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 1736,
+    "output" : "Okay, can you write me a Python script that goes through my downloads folder and renames every PDF by the date it was created? And make sure it doesn't delete or overwrite anything. Oh, and use the pathlib module, not os.path.",
+    "paragraph" : 4,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 3
+  },
+  {
+    "completionTokens" : 48,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 1587,
+    "output" : "The thing is that we kind of need to figure out the budget before we commit to the venue. It's not that the venue is bad, it's actually great, but we just don't know the headcount yet.",
+    "paragraph" : 5,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 3
+  },
+  {
+    "completionTokens" : 79,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 2247,
+    "output" : "The settlement is $250,000, payable in three installments. The first payment of $100,000 is due on March 15th, and the remaining $150,000 splits evenly over the next two quarters. Our fee is 12% of the gross, so roughly $30,000.",
+    "paragraph" : 6,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 3
+  },
+  {
+    "completionTokens" : 63,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 1975,
+    "output" : "Here are the next steps for the Whitfeld matter.\n\n1. File the response to the motion to compel by Friday.\n2. Schedule the deposition of Marcus Ortega.\n3. Send the client the updated engagement letter.\n4. Calendar the mediation for the week of the 20th.",
+    "paragraph" : 7,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 3
+  },
+  {
+    "completionTokens" : 85,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 2035,
+    "output" : "Client interview notes. The client was arrested on September 3rd after the fight outside the bar. He says the other man pulled a knife first and threatened to kill him, and he hit him with a beer bottle to defend himself. He admits he had about six drinks and some cocaine earlier that night. The other man was hospitalized with a skull fracture. We need to get the security footage before it's overwritten.",
+    "paragraph" : 8,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 3
+  },
+  {
+    "completionTokens" : 41,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 1582,
+    "output" : "Ask him to send the draft by end of day. And what do you think, should we file before Friday or wait for their response? Do not file anything until Sarah signs off on the exhibits.",
+    "paragraph" : 9,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 3
+  },
+  {
+    "completionTokens" : 186,
+    "model" : "google\/gemma-4-12b",
+    "ms" : 4444,
+    "output" : "Hey Tom, so I wanted to follow up on our conversation about rolling out AI tools to the litigation team. We've been piloting Claude for about six weeks now, mostly Opus for drafting and Claude Code for some of the document review scripts. The results have been really, really strong. The associates are saving maybe five to six hours a week, no, actually closer to eight hours a week on first drafts. We also looked at ChatGPT, but the admin controls didn't work for us. Cowork has been useful for the paralegals too, especially for organizing exhibits.\n\nMy recommendation is that we expand the pilot to the full team in January, with a training session in the first week and a check-in at the end of the quarter. Let me know if you want me to put together a budget, I think it'd be somewhere around $40,000 for the year.",
+    "paragraph" : 10,
+    "prompt" : "system-prompt-v3.txt",
+    "run" : 3
+  }
+]
